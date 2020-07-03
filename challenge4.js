@@ -1,34 +1,28 @@
-/*Challenge 3!!
+// In this Challenge you will need to find a way to execute the "console.log" on line 15 followed by the correct response for the number guessed.  Do not manipulate the conditional statements(if, else if, else)!! Only manipulate the code blocks(the code inside the curly brackets {})!!  Goodluck!!
 
-You made it this far on hard work.  Lets go on a VACATION!!
+// GUESS THE NUMBER
 
-Find a way in the tripToHawaii() function return "Good luck and Bon Voyage!"
-
-Think about the error message we are getting and what the function needs to perform the returns inside the conditionals. */
-
-
-
-//VACATION!!
-
-function tripToHawaii(map, phoneCharger, packed){
-    if(map && phoneCharger){
-        if(packed === "ready"){
-            return "Good luck and Bon Voyage!";
-        } else if(packed === "need more supplies"){
-            return "Amazon has express shipping!";
-        } else if(packed === "need luggage"){
-            return "Can only be 50 pounds!";
-        } else {
-            return "Are you ready or not?";
-        }
-    } else if(map || phoneCharger){
-        return "You need both items, map and a phoneCharger";
+function guessTheNumber(num) {
+    console.log("last line in the function!")
+    if (num === 5) {
+     return message = 'You guessed the correct number!!';
+    } else if (num === 4 || num === 6) {
+      return message = 'Your very close!';
     } else {
-        return "You have a lot of work to do, hopefully you packed!";
+     return message = 'keep guessing!!';
     }
   }
-  var map = true
-  var phoneCharger = true
-  var packed = 'ready'
-  tripToHawaii(map, phoneCharger, packed)
+  
+  guessTheNumber(5)
+  // Feel free to change the argument to any number.
+  // guessTheNumber(10000000)
+  
+  
+  
+  //Example Output should Equal
+  
+  /* guessTheNumber(5)
+   "last line in the function!"
+    'You guessed the correct number!!'
+    */
   
